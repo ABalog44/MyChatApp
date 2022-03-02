@@ -1,0 +1,106 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header-logo{
+padding:10px;
+text-align:center;
+background-color:white;
+color:rgb(0, 189, 126);
+font-size:26px;
+width: 400px;
+}
+
+.form-reg {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:rgb(0, 189, 126);
+}
+
+.form-input {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.avatar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.avatar {
+  margin: 5px;
+  width: 48px;
+  background-color: white;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  padding-top: 2px;
+}
+
+.avatar:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(245, 245, 245);
+  border-radius: 2px;
+}
+
+.avatar-clicked {
+  background-color: white;
+  border-color: rgb(235, 235, 235);
+  transform: scale(1.2);
+}
+
+.avatar-not-selected {
+  animation-name: flash;
+  animation-duration: 0.8s;
+}
+
+.form-btn {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 189, 126);
+  border: none;
+  border-radius: 2px;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+  background-color:rgb(228, 228, 228);
+}
+
+@keyframes flash {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.15);
+  }
+  40% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

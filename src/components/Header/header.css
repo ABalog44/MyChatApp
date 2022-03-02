@@ -1,0 +1,16 @@
+.chat-header {
+  
+  background:rgb(0, 160, 107);
+  width: 100%;
+  text-align: center;
+  color:white;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.heading {
+  font-size: 24px;
+}
