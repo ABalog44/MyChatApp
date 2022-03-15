@@ -34,6 +34,21 @@ ul {
   list-style: none;
 }
 
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -42,6 +57,35 @@ table {
 * {
   box-sizing: border-box;
 }
+
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 186, 126) rgb(0, 186, 126);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(230, 230, 230);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 186, 126);
+  border: 2px solid rgb(0, 186, 126);
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+
+
 
 textarea:focus,
 input:focus,
@@ -55,7 +99,8 @@ button:hover {
 
 .chat {
   width:800px;
-  height:600px;
+  min-height:400px;
+  height: calc(400px);
   margin: 0px auto;
   margin-top: 20px;
   background-color: rgb(230, 230, 230);
